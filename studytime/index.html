@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-contexto="foco">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/study-time.png" type="image/x-icon">
+    <title>Study Time</title>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <main class="app">
+    
+        <section class="app_section">
+            <h1 class="frase">Aceite a responsabilidade,<br>
+            <strong class="frase_ngrito">pelo seu futuro.</strong></h1>
+            <figure class="img_central">
+                <img class="imagemDestaque" src="img/foco.png">
+            </figure>
+        </section>
+
+        <section class="regiao_timer">
+            <div class="card">
+                <ul class="card-list">
+                    <li class="list-item">
+                        <button data-contexto = "foco" class="card_btn app_foco active">Foco</button>
+                    </li>
+                    <li class="list-item">
+                        <button data-contexto = "descanso" class="card_btn app_descanso">Descanso</button>
+                    </li>
+                </ul>
+                <div id = "timer" class="card-timer"></div>
+                <div class="card-timer-btn">
+                    <button id = "start-pause" class="app__btn">
+                        <img class="app_btn__first" src="img/play_arrow.png" alt="">
+                        <span>Play</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p class="footer-text">
+                Imagens geradas por IA no Canva. Desenvolvido por Dev Malú. 
+            </p>
+        </footer>
+    </main>
+
+    
+
+
+</body>
+</html>

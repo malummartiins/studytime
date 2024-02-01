@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@400;600&display=swap');
+
+:root {
+    --rosa: #e8947c;
+    --branco: #fcecdc;
+    --bege-escuro:     #a47c5c;        
+    --marrom:#512d20;     
+    --bege-claro: #d0afa0;
+    --linear-botes: linear-gradient(180deg, #a47c5c 0%, #d0afa0 100%);
+    --main-bg-color: linear-gradient(180deg, #e8947c 0%, #d0afa0 48.44%, #512d20 100%);
+}
+
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html {
+    background: var(--main-bg-color);
+    min-height: 100vh;
+    font-size: 10px;
+}
+.app_section{
+    width: 99rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+.frase{
+    line-height: 150%;
+    font-size: 5.2rem;
+    font-style: normal;
+    color: var(--branco);
+    font-weight: 200;
+    max-width: 46rem;
+    font-family: 'Kalnia', serif;
+}
+
+.imagemDestaque{
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    margin-top: 50px;
+    border: var(--branco) 8px solid;
+}
+
+.frase_ngrito{
+    font-weight: 600;
+}
+
+.regiao_timer{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    border-radius: 3.2rem;
+    border: 0.2rem solid var(--marrom);
+    background: var(--branco);
+    padding: 3rem;
+    margin: 2rem 0;
+    width: 59rem;
+    height: 27rem;
+    max-width: 90%;
+}
+
+
+
+.card-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+}
+
+.card_btn{
+    font-family: Montserrat;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    background: none;
+    padding: 0.8rem;
+    color: var(--marrom);
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.card_btn:hover{
+    color: var(--branco);
+    
+}
+
+.card_btn.active{
+    border-radius: 0.8rem;
+    background: var(--bege-claro);
+    font-weight: 600;
+  
+    
+}
+
+.card-timer{
+    color: var(--marrom);
+    text-align: center;
+    font-family: Unbounded;
+    font-size: 10rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 1.2rem;
+    text-align: center;
+
+}
+
+.card-timer-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app__btn{
+    padding: 0.8rem;
+    width: 12rem;
+    color: var(--branco);
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    border-radius: 3.2rem;
+    background: var(--linear-botes);
+    /*margin-top: 3.2rem;*/
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer{
+    border-top: 1px solid #333;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    
+    width: 100%;
+    background: var(--marrom);
+}
+.footer-text{
+    color: var(--branco);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+

@@ -164,3 +164,24 @@ html {
     line-height: 150%;
 }
 
+/*Responsividade para tablet*/
+
+@media(max-width: 1024px) and (min-width: 768px){
+    .app_section{
+        width: 48rem;
+    }
+}
+/* Para celular */
+
+@media (max-width: 767px){
+    .app_section{
+        width: 32rem;
+    }
+    .frase{
+        font-size: 2.6rem;
+    }
+    .card-timer{
+        font-size: 6rem;
+    }
+}
+

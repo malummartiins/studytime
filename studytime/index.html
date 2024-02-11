@@ -39,7 +39,66 @@
                 </div>
             </div>
         </section>
+<!--ONDE COMEÇA AS TAREFAS-->
+        <section class="tarefas__container">
+            <div class="tarefas__conteudo">
+                <header class="tarefa__ativa">
+                    <p class="tarefa__label">Em andamento...</p>
+                    <p class="tarefa__descricao"></p>
+                </header>
+                <div class="tarefa__topo">
+                    <h2 class="tarefa__titulo">To do list:</h2>
+                    <div class="dropdown-container">
+                        <button class="btn_more">
+                            <img src="img/more.svg" alt="">
+                        </button>
+                        <ul class="tarefas__ul">
+                            <li class="tarefas__lista">
+                                <button class="tarefas__lista-btn" id="btn-remover-concluidas">
+                                    <img src="img/check.svg" alt="">
+                                    Limpar tarefas concluídas
+                                </button>
+                            </li>
+                            <li class="tarefas__lista">
+                                <button class="tarefas__lista-btn" id="btn-remover-todas">
+                                    <img src="img/trash.svg" alt="">
+                                    Limpar todas as tarefas
+                                </button>
+                            </li>
 
+                        </ul>
+                    </div>
+                </div>
+
+                <ul class="tarefas__todolist"></ul>
+                <form class="add__tarefa hidden" aria-hidden="true">
+                    <div class="form-tarefas">
+                        <label class="form-label">
+                            Adicionando tarefa
+                        </label>
+                        <textarea required rows="4" class="form-textarea" placeholder="No que voce está trabalhando?"></textarea>
+                    </div>
+                    <footer class="form__footer">
+                        <button type="button" class="form-footer__btn form-footer__btn-delete">
+                            <img src="img/delete.png" alt=""> Deletar
+                        </button>
+                        <div class="splittler"></div>
+                        <button type="button" class="form-footer__btn form-footer__btn-cancel">
+                            <img src="img/close.png" alt=""> Cancelar
+                        </button>
+                        <button class="form-footer__btn form-footer__btn-salvar">
+                            <img src="img/save.png" alt=""> Salvar
+                        </button>
+                    </footer>
+                </form>
+                <button class="btn__addtarefa">
+                    <img src="img/plus.png" alt=""> Adicionar nova tarefa
+                </button>
+            </div>
+        </section>
+
+
+       <!--FIM TAREFAS : INICIO FOOTER -->
         <footer class="footer">
             <p class="footer-text">
                 Imagens geradas por IA no Canva. Desenvolvido por Dev Malú. 

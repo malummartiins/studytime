@@ -164,6 +164,51 @@ html {
     line-height: 150%;
 }
 
+/* EDICAO PARTE TAREFAS*/
+
+/* dropdown */
+.dropdown-container{
+    position: relative;
+}
+
+.tarefas__ul{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    right: 0;
+    min-width: 24rem;
+    padding: 1.6rem;
+}
+
+.tarefas__ul:hover,
+.btn_more:hover ~.tarefas__ul{
+    display: block;
+    text-align: right;
+    border-radius: 0.8rem;
+    border:  0.2rem solid var(--marrom );
+    background: var(--rosa-escuro);
+}
+.tarefas__lista{
+    margin: 1.6rem 0;
+}
+
+.tarefas__lista-btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--marrom);
+    gap: 0.8rem;
+}
+
+/* fim - dropdown */
+
+
 /*Responsividade para tablet*/
 
 @media(max-width: 1024px) and (min-width: 768px){
@@ -183,5 +228,214 @@ html {
     .card-timer{
         font-size: 6rem;
     }
+    .tarefa__ativa{
+        gap: 2rem;
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+.tarefas__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tarefas__conteudo{
+    width: 59rem;
+    max-width: 90%;
+    color: #fff;
+}
+
+.tarefa__ativa{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+    padding: 4rem 0;
+    border-bottom: 1px solid var(--marrom);
+    margin: 4rem;
+}
+
+.form-textarea,
+.form-textarea::placeholder{
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    white-space: nowrap;
+    font-family: Montserrat;
+}
+
+.tarefa__descricao{
+    font-family: Montserrat;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.tarefa__titulo{
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+.tarefa__topo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-edit,
+.btn_more{
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.tarefa__label{
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.tarefas__todolist{
+    margin-top: 2.4rem;
+    margin-bottom: 4rem;
+}
+
+.tarefas__todolist-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 0.8rem;
+    background: var(--fundo-card);
+    margin-bottom: 0.8rem;
+    padding: 1.6rem;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.tarefas__todolist-descricao{
+    flex-grow: 1;
+    margin: 0;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    color: var(--marrom);
+    font-family: Montserrat;
+}
+
+.tarefas__todolist-item-complete.tarefas__todolist-item{
+    background: var(--fundo-card-concludo);
+    cursor: inherit;
+}
+
+.tarefas__todolist-item-active.tarefas__todolist-item{
+    border:2px solid #fff;
+}
+.tarefas__todolist-item-complete .tarefas__todolist-icon-status circle{
+    fill: #00F4BF;
+}
+
+.add__tarefa{
+    padding: 1.6rem;
+    border-radius: 0.8rem;
+    background: var(--fundo-card);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; 
+    font-family: Montserrat;
+}
+
+.form-label{
+    color: var(--marrom);
+    font-family: Unbounded;
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+.form-textarea{
+    width: 100%;
+    border-radius: 0.8rem;
+    padding: 0.8rem;
+    background: #98A0A8;
+}
+
+.form__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.6rem;
+    margin-top: 3.2rem;
+}
+
+.form__footer .splitter{
+    flex-grow: 1;
+}
+
+.form-footer__btn{
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    color: var(--marrom);
+    font-family: Montserrat;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    gap: 0.8rem;
+}
+
+.form-footer__btn-salvar{
+    border-radius: 3.2rem;
+    padding: 0.8rem 2.4rem;
+    color: #fff;
+    background: var(--marrom);
+}
+
+.btn__addtarefa{
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--rosa);
+    border-radius: 3.2rem;
+    border: 0.2rem solid var(--rosa);
+    width: 100%;
+    margin-top: 4rem;
+    padding: 1.8rem;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.btn-edit:disabled{
+    color: #e6e6e6;
+    opacity: 0.8;
+    cursor: not-allowed;
 }
 

@@ -7,8 +7,10 @@
     --bege-escuro:     #a47c5c;        
     --marrom:#512d20;     
     --bege-claro: #d0afa0;
-    --linear-botes: linear-gradient(180deg, #a47c5c 0%, #d0afa0 100%);
-    --main-bg-color: linear-gradient(180deg, #e8947c 0%, #d0afa0 48.44%, #512d20 100%);
+    /*--linear-botes: linear-gradient(180deg, #a47c5c 0%, #d0afa0 100%);*/
+     --linear-botes: linear-gradient(180deg, #512d20 0%, #d0afa0 100%);
+     --main-bg-color: linear-gradient(180deg, #412217 0%, #957c70 48.44%, #512d20 100%);
+    /*--main-bg-color: linear-gradient(180deg, #e8947c 0%, #d0afa0 48.44%, #512d20 100%);*/
 }
 
 

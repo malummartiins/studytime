@@ -423,9 +423,9 @@ html {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    color: var(--rosa);
+    color: var(--branco);
     border-radius: 3.2rem;
-    border: 0.2rem solid var(--rosa);
+    border: 0.2rem solid var(--branco);
     width: 100%;
     margin-top: 4rem;
     padding: 1.8rem;

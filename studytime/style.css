@@ -11,6 +11,8 @@
      --linear-botes: linear-gradient(180deg, #512d20 0%, #d0afa0 100%);
      --main-bg-color: linear-gradient(180deg, #412217 0%, #957c70 48.44%, #512d20 100%);
     /*--main-bg-color: linear-gradient(180deg, #e8947c 0%, #d0afa0 48.44%, #512d20 100%);*/
+      --fundo-card:  rgba(255, 255, 255, 0.50);
+      --fundo-card-concludo: rgba(0, 244, 191, 0.40);
 }
 
 

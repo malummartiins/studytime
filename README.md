@@ -9,5 +9,13 @@ pequena pausa de 10 minutos para descansar antes de retomar mais um bloco.
 ## Acesse o projeto em:
 https://studytime-devmalu.vercel.app/
 
+
+Versão mais nova:
+
+https://github.com/malummartiins/studytime/assets/130713333/0e20a9d2-bbf1-4a60-a922-8304bfa8d775
+
+
+Primeira Versão:
+
 https://github.com/malummartiins/studytime/assets/130713333/c8c8a2aa-a140-413c-9f45-f6cfa6bf220a
 
